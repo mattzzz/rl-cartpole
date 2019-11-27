@@ -17,8 +17,8 @@ else:
 
 # create the model for the policy
 model = Sequential()
-model.add(Dense(units=32, input_dim=4, activation='relu', kernel_initializer='glorot_uniform'))
-model.add(Dense(units=32))#, activation='relu', kernel_initializer='glorot_uniform'))
+model.add(Dense(units=64, input_dim=4))#, activation='relu', kernel_initializer='glorot_uniform'))
+model.add(Dense(units=64))#, activation='relu', kernel_initializer='glorot_uniform'))
 model.add(Dense(units=1, activation='sigmoid'))#, kernel_initializer='RandomNormal'))
 
 optimiser = keras.optimizers.Adam()
