@@ -2,13 +2,14 @@ import gym
 import numpy as np
 import os
 
-if 1:
+if 0:
     # os.environ["KERAS_BACKEND"] = "plaidml.keras.backend"
     import keras as keras
     from keras.layers import Dense
     from keras.models import Sequential
 else:
     import tensorflow as tf
+    tf.compat.v1.disable_eager_execution()
     from tensorflow import keras
     from tensorflow.keras.layers import Dense
     from tensorflow.keras.models import Sequential
